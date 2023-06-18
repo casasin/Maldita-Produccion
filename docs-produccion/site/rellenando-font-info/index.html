@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://casasin.com/maldita-produccion/rellenando-font-info/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Font Info - Maldita Producción</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Font Info";
+        var mkdocs_page_input_path = "rellenando-font-info.md";
+        var mkdocs_page_url = "/maldita-produccion/rellenando-font-info/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Maldita Producción
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preparando-todo/">Preparando todo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../chequea-maldito/">Chequea maldito!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../archivo-opentype/">Archivo Opentype</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Font Info</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#pestanas">Pestañas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#font">Font:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#masters-hinting">Masters: Hinting</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#masters-vertical-metrics">Masters: Vertical Metrics</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#valores-hhea">Valores hhea</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#valores-typo">Valores Typo</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#valores-win">Valores Win</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exports">Exports:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exports-general">Exports: General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exports-style-linking">Exports: Style Linking</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exports-custom-parameters">Exports: Custom Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#export-para-variables">Export para Variables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#custom-parameters">Custom Parameters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other">Other</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cursivas-en-fuentes-variables">Cursivas en fuentes variables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#export">Export:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#en-ttx">En TTX</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../generamos-fuentes/">Generamos las fuentes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Acerca de…</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Maldita Producción</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Font Info</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rellenando-el-font-info">Rellenando el Font Info</h1>
+<p>La mayoría del "Font Info" es sencillo, o al menos engañosamente sencillo. Aquí no me meto en lo obvio ni en opciones que sirven para cosas muy específicas. Es más un recordatorio de lo que se me olvida siempre que una guía completa de lo que hay que poner.</p>
+<h2 id="pestanas">Pestañas</h2>
+<h3 id="font">Font:</h3>
+<ul>
+<li>Activar "Use typo metrics"</li>
+<li>"fsType Embedding": Editable.</li>
+<li>"glyphOrder" desordena la ventana Font, se puede hacer y activar al final del todo.</li>
+<li>"Family Alignment Zones"</li>
+<li>"unicodeRanges &amp; codePageRanges"</li>
+<li>"Export Mac Name Table Entries" desactivado</li>
+<li>"Panose": No sirve pa na. Ponerlo vacío y rellenar sólo si es monoespaciada.</li>
+</ul>
+<p>Si la tipo es monoespaciada: "isFixedPitch" activado.</p>
+<h3 id="masters-hinting">Masters: Hinting</h3>
+<ul>
+<li>"Autohinting: Zones": Meter zonas extra para versalitas, numerales pequeños, etc.</li>
+<li>"Autohinting: Stems": Cuantos menos valores metamos, mejor. Como si es uno vertical y otro horizontal.</li>
+</ul>
+<h3 id="masters-vertical-metrics">Masters: Vertical Metrics</h3>
+<p>Recuerden: Activar "Use_Typo_Metrics" en Fonts.</p>
+<p>Para calcular los VM, mejor hacerlo con el máster más pesado y copiar los resultados en los demás masters. </p>
+<p><strong>Porque ojo: Toda la familia debe tener los mismos valores.</strong></p>
+<p>Podemos usar el Script "Mekkablue Font Info / Vertical Metrics Manager" para ahorrar tiempo o hacerlo a manita.</p>
+<h4 id="valores-hhea">Valores hhea</h4>
+<ul>
+<li>"hheaAscender" = Un poco más de la altura de la mayúscula acentuada (con un solo diacrítico) - más alta. Normalmente Á o Å, idealmente &gt;Á.</li>
+<li>"hheaDescender" = Un poco más del punto más bajo de la minúscula más baja. Normalmente g o ç, idealmente &gt;g. </li>
+<li>"hheaLineGap" = 0</li>
+</ul>
+<p>No deben sumar 1000 necesariamente. Algo cerca de 1200 es deseable.</p>
+<h4 id="valores-typo">Valores Typo</h4>
+<ul>
+<li>"typoAscender" = "hheaAscender"</li>
+<li>"typoDescender" = "hheaDescender"</li>
+<li>"typoLineGap" = 0</li>
+</ul>
+<p>En resumen, hhea==typo.</p>
+<h4 id="valores-win">Valores Win</h4>
+<ul>
+<li>"winAscent" == El punto más alto de la familia (Para encontrarlo: "Mekkablue / Test / Report Highest and Lower...")</li>
+<li>"winDescent" == El punto más bajo de la familia (valor integro, aunque sea negativo, ponemos positivo).</li>
+</ul>
+<p><img alt="Vertical Metrics" src="../images/VMetrics.png" /></p>
+<p>Si tras exportar, usamos el script "Test/Webfont Test HTML" con Metrics activado vemos como queda de centrada la tipo en un fondo gris. Si pensamos en nuestra tipo en un botón web, estaría bien que quedase centrado.</p>
+<h3 id="exports">Exports:</h3>
+<p>Esto se entiende mucho mejor si antes lees sobre el archivo OpenType.</p>
+<h3 id="exports-general">Exports: General</h3>
+<ul>
+<li>"Name Table Entry: 1; " <ul>
+<li>El nombre de la familia si es RIBBI: <em>Times New Roman</em></li>
+<li>El nombre del peso si no: <em>Times New Roman SemiBold</em></li>
+</ul>
+</li>
+<li>"Name Table Entry: 2; "<ul>
+<li>Si es RIBBI: <em>Regular, Bold, Italic, Bold Italic</em></li>
+<li>Si no es RIBBI: <em>Regular o Italic</em></li>
+</ul>
+</li>
+<li>"Full Name" o "Custom P: Name Table Entry: 4; " <ul>
+<li>Nombre de fuente + nombre de estilo: <em>Times New Roman Bold Italic</em></li>
+</ul>
+</li>
+<li>"Font Name" o "Custom P: Name Table Entry: 6; "<ul>
+<li>Nombre Postscript: <em>TimesNewRoman-BoldItalic</em></li>
+</ul>
+</li>
+<li>"WWS Family Name": Para tipos con estilos que no se ajusten a <em>Weight Width Slope</em>, como Optical Sizes: <em>Times New Roman Display</em></li>
+<li>"WWS Subfamily Name:": <em>Bold Italic</em></li>
+</ul>
+<h3 id="exports-style-linking">Exports: Style Linking</h3>
+<p>Importante para que el cuarteto RIBBI funcione bien en programas de mierda.</p>
+<p>El resto de instancias sólo se linka con su italic (no intentar que Medium tenga su Bold, vamos).</p>
+<h3 id="exports-custom-parameters">Exports: Custom Parameters</h3>
+<ul>
+<li>"Rename Glyphs":<ul>
+<li>Si tenemos versiones .bold de p. ej. el $ para nuestra variable y queremos exportarlas en estáticas por defecto.</li>
+</ul>
+</li>
+</ul>
+<h2 id="variables">Variables</h2>
+<h3 id="export-para-variables">Export para Variables</h3>
+<ul>
+<li>"Add Variable Font Setting"</li>
+<li>"Name:" Regular o Italic</li>
+<li>"Localized Family Names: " Si exportamos tanto estáticas como variables, cambiamos el nombre a la variable para que se distinga en el menú: <em>Times New Roman Variable</em></li>
+<li>"Variations PostScript Name Prefix: " Para poner un nombre postcript, sin espacios, a nuestro gusto: <em>TimesNewRomanVF-Roman</em></li>
+</ul>
+<h3 id="custom-parameters">Custom Parameters</h3>
+<ul>
+<li>Establecer "Variable Font Origin". Tiene que ser un máster. Si queremos Style Linking que vaya de Regular y Bold, el Regular tiene que ser máster. Si no, volverá de Bold al máster de origen.</li>
+<li>"File Name:" Para que el archivo a exportar tenga el nombre que queramos y se distinga de las estáticas: <em>TimesNewRomanVF-Roman</em></li>
+<li>"Name Table Entry: 1; ": El nombre de la familia + VF, variable...: <em>Times New Roman Variable</em></li>
+<li>"Name Table Entry: 2; ": <em>Regular o Italic</em></li>
+<li>"Full Name" o "Custom P: Name Table Entry: 4; ": Nombre de fuente + nombre de estilo: <em>Times New Roman Variable</em></li>
+</ul>
+<p>En las instancias estáticas: "Axis Location": Para la tabla <code>AVAR</code> en fuentes variables. Convierte nuestras coordenadas de diseño en coordenadas para el usuario, con un peso 400 en Regular, 700 en Bold, etc. más sencillas de usar.</p>
+<ul>
+<li>Se chequea en <a href="https://www.axis-praxis.org/samsa/">https://www.axis-praxis.org/samsa/</a></li>
+<li>Con el plugin "mekkablue/UnnestComponents" añadimos el CP "Filter: UnnestComponents".</li>
+<li>Con el script "Mekkablue / test / Variable Font test HTML" podemos probar la fuente tras exportar.</li>
+</ul>
+<h3 id="other">Other</h3>
+<p>"Font Type": Variable</p>
+<h3 id="cursivas-en-fuentes-variables">Cursivas en fuentes variables</h3>
+<p>Si tenemos una tipo inclinada lo normal es que vaya en el mismo archivo y todo vaya bastante bien, pero si tenemos cursivas auténticas en una variable tendremos dos archivos que no interpolan entre sí, pero querremos que funcione el style linking.</p>
+<p>Aunque tengamos una Slant, es mejor llamar al eje Italic (vete a saber por qué).</p>
+<p>Las instancias deben tener <em>Style Linking</em>. Cada peso con su par en la romana, y la Bold Italic con Regular.</p>
+<h3 id="export">Export:</h3>
+<p>En "Variable Font Setting":
+- "Name:" Italic
+- "Localized Family Names: " Igual que en la romana: <em>Times New Roman Variable</em>
+- "Variations PostScript Name Prefix: " Añadimos Italic: <em>TimesNewRomanVFItalic</em>
+- "FileName:" <em>TimesNewRomanVFItalic</em></p>
+<h3 id="en-ttx">En TTX</h3>
+<ul>
+<li>Podemos chequear en <code>MacStyleValue</code> y <code>fsSelectionValue</code>.</li>
+<li>Nombres Postscript: Al crearlos Glyphs pone dos veces Italic. No es importante pero podemos borrar el segundo para acortarlo: <code>TimesNewRomanVFItalic-Regular</code></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../archivo-opentype/" class="btn btn-neutral float-left" title="Archivo Opentype"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../generamos-fuentes/" class="btn btn-neutral float-right" title="Generamos las fuentes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../archivo-opentype/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../generamos-fuentes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

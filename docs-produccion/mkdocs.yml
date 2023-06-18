@@ -1,0 +1,15 @@
+site_name: Maldita Producción
+site_url: https://casasin.com/maldita-produccion
+
+# use_directory_urls: false
+
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - Preparando todo: preparando-todo.md
+  - Chequea maldito!: chequea-maldito.md
+  - Archivo Opentype: archivo-opentype.md
+  - Font Info: rellenando-font-info.md
+  - Generamos las fuentes: generamos-fuentes.md
+  - Acerca de…: about.md
